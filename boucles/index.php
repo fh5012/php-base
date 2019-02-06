@@ -1,3 +1,4 @@
+
 <?php
 
 /***    
@@ -108,10 +109,44 @@ foreach(range(1, 100) as $number){
 // 24 - 12 = 12; 
 // 12 - 12 = 0 ;
 
-// 48 - 18 = 
-//
+// (a)48 - (b)18 = 30;
+// 30 - 18 = 12;
+// 12 - 12 = 0;
+
 
 /***
  * 
  * 
+ * Exercices
+ 1.Créer une boucle qui affiche 10 étoiles (*)
+ 2.Imbriquer la boucle dans une autre boucle afin d'afficher 10 lignes de 10 étoiles
+ 3.Nous obtenons un carré. Trouver un moyen de modifier le code pour obtenir un triangle rectangle.
  */
+
+//1.Créer une boucle qui affiche 10 étoiles (*)
+
+
+
+ //triangle
+for($i = 0; $i<=100; $i++){  
+for($j = 100- $i; $j>=0; $j--){  
+echo "*";  
+}  
+echo "<br>";  
+} 
+echo "<br>"; 
+ echo "<br>"; 
+ //rectangle
+for($i = 0; $i<=9; $i++){  
+    for($j = 9; $j>=0; $j--){  
+    echo "*";  
+    }  
+    echo "<br>";  
+    } 
+
+
+    for($i = 0; $i < 11; $i++){
+        $state = (i === 5)? 'visible' : 'hidden';
+
+        echo '<span style="visibility: '.$state.'">*</span>';
+    }
